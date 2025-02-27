@@ -1,0 +1,14 @@
+# Ignorar node_modules (si usas herramientas como npm o yarn)
+node_modules/
+
+# Ignorar archivos de entorno o configuración local
+.env
+wp-config.php
+
+# Ignorar archivos de IDE
+.vscode/
+.idea/
+
+# Ignorar archivos de caché o compilación
+*.log
+*.tmp
