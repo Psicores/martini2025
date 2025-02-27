@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg52"
+   width="41.879822"
+   height="32.939697"
+   viewBox="0 0 41.879822 32.939696"
+   sodipodi:docname="Propuestas.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs56">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath124">
+      <path
+         d="M 0,1146.591 H 727.413 V 0 H 0 Z"
+         id="path122" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <g
+     id="g60"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,-578.21771,94.471108)">
+    <g
+       id="g120"
+       clip-path="url(#clipPath124)"
+       transform="translate(306.05777,-354.23673)">
+      <g
+         id="g134"
+         transform="translate(143.36003,417.31985)">
+        <path
+           d="m 0,0 c -1.925,1.682 -3.692,3.664 -5.854,5.019 -4.092,2.563 -8.266,0.301 -8.29,-4.249 -0.03,-5.989 7.601,-15.216 13.414,-16.115 0.794,-0.123 1.737,0.075 2.488,0.407 6.335,2.789 10.78,7.361 12.019,14.283 0.319,1.779 -0.512,4.643 -1.833,5.592 C 10.6,5.904 7.706,5.746 6.021,4.953 3.772,3.894 2.036,1.747 0,0 m -0.269,2.5 c 2.637,1.767 4.725,3.688 7.188,4.701 4.365,1.794 8.587,-1.314 8.732,-6.024 0.217,-7.06 -7.7,-16.888 -14.704,-18.05 -1.187,-0.197 -2.621,0.098 -3.733,0.612 -6.373,2.953 -10.73,7.691 -12.582,14.603 -0.878,3.274 -0.342,6.082 2.456,8.123 3.059,2.23 6.052,1.333 8.819,-0.67 1.391,-1.008 2.617,-2.243 3.824,-3.295"
+           style="fill:#ee5339;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path136" />
+      </g>
+    </g>
+  </g>
+</svg>
