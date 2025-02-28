@@ -1,0 +1,45 @@
+/*
+Theme Name: Martini 2025
+Theme URI: https://tusitio.com/martini2025
+Author: PsicoresDev
+Author URI: https://psicoresdev.com
+Description: Tema personalizado para la asesora de seguros María Belén Martini.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: martini2025
+*/
+
+/* Estilos generales */
+body {
+    font-family: 'Fashion Fetish', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Nevermind Headline', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Definición de fuentes */
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('assets/fonts/FashionFetish-Regular.woff2') format('woff2'),
+        url('assets/fonts/FashionFetish-Regular.woff') format('woff'),
+        url('assets/fonts/FashionFetish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nevermind Headline';
+    src: url('assets/fonts/NevermindHeadline-Bold.woff2') format('woff2'),
+        url('assets/fonts/NevermindHeadline-Bold.woff') format('woff'),
+        url('assets/fonts/NevermindHeadline-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
