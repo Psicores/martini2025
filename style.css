@@ -21,29 +21,17 @@ Text Domain: martini2025
 
 */
 
-
-
 /* Definición de fuentes */
-
 @font-face {
-    font-family: 'Fashion Fetish';
-    src: url('./assets/fonts/FashionFetish-Bold.woff2') format('woff2'),
-    url('./assets/fonts/FashionFetish-Bold.woff') format('woff');
-font-weight: bold;
-font-style: normal;
+    font-family: "Fashion-Fetish";
+    src: url("assets/fonts/FashionFetish.woff2") format("woff2"),
+    url("assets/fonts/FashionFetish.woff") format("woff");
 }
 
-@font-face {
-    font-family: 'Nevermind Headline';
-    src: url('./assets/fonts/NevermindHeadline-Bold.woff2') format('woff2'),
-         url('./assets/fonts/NevermindHeadline-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+
+
 
 /* Estilos Generales */
 body {
-    font-family: 'Fashion Fetish';
-    line-height: 1.6;
-    color: #382964;
+    font-family: 'Fashion-Fetish';
 }
