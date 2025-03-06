@@ -24,7 +24,6 @@ Text Domain: martini2025
 /* Definición de fuentes */
 @font-face {
     font-family: "FashionFetish";
-    font-weight: 400;
     src:
         url("assets/fonts/FashionFetish.woff2") format("woff2"),
         url("assets/fonts/FashionFetish.woff") format("woff");
@@ -32,15 +31,28 @@ Text Domain: martini2025
 
 @font-face {
     font-family: "FashionFetishBold";
-    font-weight: 400;
     src:
         url("assets/fonts/FashionFetishBold.woff2") format("woff2"),
         url("assets/fonts/FashionFetishBold.woff") format("woff");
 }
 
+@font-face {
+    font-family: "NeverMindHeadlineLight";
+    src:
+        url("assets/fonts/NeverMindHeadlineLight.woff2") format("woff2"),
+        url("assets/fonts/NeverMindHeadlineLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "NeverMindHeadlineRegular";
+    src:
+        url("assets/fonts/NeverMindHeadlineRegular.woff2") format("woff2"),
+        url("assets/fonts/NeverMindHeadlineRegular.woff") format("woff");
+}
 
 
 /* Estilos Generales */
 body {
-    font-family: 'FashionFetishBold';
+    font-family: 'NeverMindHeadlineRegular';
+    /* font-size: clamp(1.5rem, 5vw, 3rem); funcion para textos adaptables */
 }
