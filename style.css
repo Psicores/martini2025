@@ -23,15 +23,24 @@ Text Domain: martini2025
 
 /* Definición de fuentes */
 @font-face {
-    font-family: "Fashion-Fetish";
-    src: url("assets/fonts/FashionFetish.woff2") format("woff2"),
-    url("assets/fonts/FashionFetish.woff") format("woff");
+    font-family: "FashionFetish";
+    font-weight: 400;
+    src:
+        url("assets/fonts/FashionFetish.woff2") format("woff2"),
+        url("assets/fonts/FashionFetish.woff") format("woff");
 }
 
+@font-face {
+    font-family: "FashionFetishBold";
+    font-weight: 400;
+    src:
+        url("assets/fonts/FashionFetishBold.woff2") format("woff2"),
+        url("assets/fonts/FashionFetishBold.woff") format("woff");
+}
 
 
 
 /* Estilos Generales */
 body {
-    font-family: 'Fashion-Fetish';
+    font-family: 'FashionFetishBold';
 }
