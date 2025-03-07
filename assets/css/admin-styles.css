@@ -1,0 +1,7 @@
+/* Ajustar el tamaño y la alineación del icono del menú */
+#adminmenu .wp-menu-image img {
+    width: 25px; /* Tamaño del icono */
+    height: 25px; /* Tamaño del icono */
+    padding-top: 6px; /* Alineación vertical */
+}
+
