@@ -4,4 +4,44 @@
     height: 25px; /* Tamaño del icono */
     padding-top: 6px; /* Alineación vertical */
 }
+/* Estilos para las pestañas */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #A89e9c; /* Borde inferior en gris */
+}
 
+.nav-tab {
+    padding: 10px 15px;
+    background: #f7f0e8; /* Fondo de pestañas inactivas */
+    border: 1px solid #A89e9c; /* Borde en gris */
+    border-bottom: none;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #382964; /* Texto en color oscuro */
+    cursor: pointer;
+    font-weight: 600; /* Texto en negrita */
+    transition: all 0.3s ease; /* Transición suave */
+    outline: none; /* Eliminar el outline predeterminado */
+}
+
+.nav-tab:hover {
+    background: #ee5437; /* Fondo al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+}
+
+.nav-tab-active {
+    background: #ee5437; /* Fondo de pestaña activa */
+    color: #fff; /* Texto blanco en pestaña activa */
+    border-color: #ee5437; /* Borde en color vibrante */
+    position: relative;
+    bottom: -1px; /* Alinear con el borde inferior */
+}
+
+/* Contenido de las pestañas */
+.tab-content {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #A89e9c; /* Borde en gris */
+    border-top: none; /* Eliminar borde superior */
+    margin-top: -1px;
+}

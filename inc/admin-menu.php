@@ -19,28 +19,54 @@ function martini_theme_add_admin_menu() {
 add_action('admin_menu', 'martini_theme_add_admin_menu');
 
 /**
- * Renderizar la página de opciones del tema
+ * Renderizar la página de opciones del tema con pestañas
  */
 function martini_theme_options_page() {
     ?>
     <div class="wrap">
         <h1>Opciones de Tema</h1>
-        <p>
-            En esta sección podrás cargar y configurar diferentes elementos del tema, como:
-        </p>
-        <ul>
-            <li>Logotipo del sitio.</li>
-            <li>Imágenes para slides.</li>
-            <li>Iconos para redes sociales y sus enlaces correspondientes.</li>
-            <li>Y mucho más.</li>
-        </ul>
-        <p>
-            Utiliza las opciones disponibles a continuación para personalizar tu sitio.
-        </p>
+
+        <!-- Pestañas -->
+        <h2 class="nav-tab-wrapper">
+            <a href="#tab-1" class="nav-tab nav-tab-active">Tab 1</a>
+            <a href="#tab-2" class="nav-tab">Tab 2</a>
+        </h2>
+
+        <!-- Contenido de las pestañas -->
+        <?php
+        // Incluir el contenido de cada pestaña
+        require_once get_template_directory() . '/inc/tabs/tab-1.php';
+        require_once get_template_directory() . '/inc/tabs/tab-2.php';
+        ?>
     </div>
+
+    <!-- Script para manejar las pestañas -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleccionar todas las pestañas
+            const tabs = document.querySelectorAll('.nav-tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Remover la clase activa de todas las pestañas
+                    tabs.forEach(t => t.classList.remove('nav-tab-active'));
+                    // Ocultar todos los contenidos
+                    tabContents.forEach(content => content.style.display = 'none');
+
+                    // Agregar la clase activa a la pestaña seleccionada
+                    this.classList.add('nav-tab-active');
+                    // Mostrar el contenido correspondiente
+                    const target = this.getAttribute('href');
+                    document.querySelector(target).style.display = 'block';
+                });
+            });
+        });
+    </script>
     <?php
 }
-
 /**
  * Cargar estilos en el panel de administración
  */
