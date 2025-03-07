@@ -56,3 +56,11 @@ body {
     font-family: 'NeverMindHeadlineRegular';
     /* font-size: clamp(1.5rem, 5vw, 3rem); funcion para textos adaptables */
 }
+
+.site-header{
+    background-color: #f7f0e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
