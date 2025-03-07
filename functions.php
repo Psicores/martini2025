@@ -37,7 +37,7 @@ function martini_theme_add_admin_menu()
       "martini_theme_options",    // Slug del menú
       "martini_theme_options_page", // Función que renderiza la página
       $icon_url,                  // URL del icono personalizado
-      6                          // Posición en el menú
+      2                         // Posición en el menú
    );
 }
 add_action('admin_menu', 'martini_theme_add_admin_menu');
