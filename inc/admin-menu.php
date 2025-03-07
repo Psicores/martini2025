@@ -2,7 +2,8 @@
 /**
  * Agregar menú de administración
  */
-function martini_theme_add_admin_menu() {
+function martini_theme_add_admin_menu()
+{
     // Obtener la URL del icono SVG
     $icon_url = get_template_directory_uri() . '/assets/images/logo_admin.svg';
 
@@ -21,7 +22,8 @@ add_action('admin_menu', 'martini_theme_add_admin_menu');
 /**
  * Renderizar la página de opciones del tema con pestañas
  */
-function martini_theme_options_page() {
+function martini_theme_options_page()
+{
     ?>
     <div class="wrap">
         <h1>Opciones de Tema</h1>
@@ -39,43 +41,28 @@ function martini_theme_options_page() {
         require_once get_template_directory() . '/inc/tabs/tab-2.php';
         ?>
     </div>
-
-    <!-- Script para manejar las pestañas -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Seleccionar todas las pestañas
-            const tabs = document.querySelectorAll('.nav-tab');
-            const tabContents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    // Remover la clase activa de todas las pestañas
-                    tabs.forEach(t => t.classList.remove('nav-tab-active'));
-                    // Ocultar todos los contenidos
-                    tabContents.forEach(content => content.style.display = 'none');
-
-                    // Agregar la clase activa a la pestaña seleccionada
-                    this.classList.add('nav-tab-active');
-                    // Mostrar el contenido correspondiente
-                    const target = this.getAttribute('href');
-                    document.querySelector(target).style.display = 'block';
-                });
-            });
-        });
-    </script>
     <?php
 }
 /**
  * Cargar estilos en el panel de administración
  */
-function martini_theme_admin_styles() {
+function martini_theme_admin_styles()
+{
     wp_enqueue_style(
         'martini-theme-admin-styles', // Identificador único
         get_template_directory_uri() . '/assets/css/admin-styles.css', // Ruta correcta
         array(), // Dependencias (ninguna en este caso)
         '1.0.0' // Versión del archivo
+    );
+
+
+    // Cargar script JavaScript
+    wp_enqueue_script(
+        'martini-theme-admin-tabs', // Identificador único
+        get_template_directory_uri() . '/js/admin-tabs.js', // Ruta al archivo JavaScript
+        array(), // Dependencias (ninguna en este caso)
+        '1.0.0', // Versión del archivo
+        true // Cargar el script en el footer
     );
 }
 add_action('admin_enqueue_scripts', 'martini_theme_admin_styles');
