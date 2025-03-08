@@ -17,8 +17,6 @@ Text Domain: martini2025
     "violeta" : #382964
     "naranja" : #ee5437
     "gris" : #A89e9c
-
-
 */
 
 /* Definición de fuentes */
@@ -50,17 +48,97 @@ Text Domain: martini2025
         url("assets/fonts/NeverMindHeadlineRegular.woff") format("woff");
 }
 
-
 /* Estilos Generales */
 body {
     font-family: 'NeverMindHeadlineRegular';
-    /* font-size: clamp(1.5rem, 5vw, 3rem); funcion para textos adaptables */
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    padding: 0; /* Eliminar el padding predeterminado del body */
 }
 
-.site-header{
-    background-color: #f7f0e8;
+/* Estilos para el header */
+.site-header {
+    background-color: #f7f0e8; /* Fondo del header */
+  /*  width: 100%; /* Ocupar el ancho completo de la página */
+/*    padding: 20px 0; /* Espaciado interno (solo arriba y abajo) */
+}
+
+/* Contenedor de las columnas */
+.header-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    justify-content: space-between; /* Distribuir el espacio entre las columnas */
+    align-items: center; /* Centrar verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+/*    padding: 0 20px; /* Espaciado interno (izquierda y derecha) */
+}
+
+/* Estilos para las columnas */
+.header-column {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    text-align: center; /* Centrar el contenido de cada columna */
+}
+
+/* Estilos para el logotipo */
+.header-logo {
+    text-align: left; /* Alinear el logotipo a la izquierda */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el logotipo */
+    justify-content: flex-start; /* Alinear a la izquierda */
+}
+
+.header-logo .custom-logo {
+    max-height: 150px; /* Altura máxima del logotipo (ajusta según sea necesario) */
+    width: auto; /* Mantener la proporción de la imagen */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para el logotipo */
+.header-logo .custom-logo:hover {
+    transform: scale(1.1); /* Agrandar el logotipo un 10% */
+}
+
+/* Estilos para el nombre del sitio (si no hay logotipo) */
+.header-logo a {
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #382964; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para el nombre del sitio */
+.header-logo a:hover {
+    transform: scale(1.1); /* Agrandar el nombre del sitio un 10% */
+}
+
+/* Estilos para el nombre del sitio (si no hay logotipo) */
+.header-logo a {
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #382964; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+/* Estilos para el menú de navegación */
+.header-menu {
+    text-align: center; /* Centrar el menú */
+}
+
+/* Estilos para las redes sociales */
+.header-social {
+    text-align: right; /* Alinear las redes sociales a la derecha */
+}
+
+/* Estilos para la lista del menú */
+.menu {
+    list-style: none; /* Quitar los estilos de lista */
+    margin: 0; /* Eliminar el margen predeterminado */
+    padding: 0; /* Eliminar el padding predeterminado */
+    display: flex; /* Usar flexbox para alinear los elementos del menú */
+    justify-content: center; /* Centrar los elementos del menú */
+}
+
+/* Estilos para los elementos del menú */
+.menu li {
+    margin: 0 10px; /* Espacio entre los elementos del menú */
 }
