@@ -129,6 +129,7 @@ body {
     text-align: right; /* Alinear las redes sociales a la derecha */
 }
 
+
 /* Estilos para la lista del menú */
 .menu {
     list-style: none; /* Quitar los estilos de lista */
@@ -140,5 +141,65 @@ body {
 
 /* Estilos para los elementos del menú */
 .menu li {
+    position: relative; /* Necesario para posicionar los submenús */
     margin: 0 10px; /* Espacio entre los elementos del menú */
+}
+/* Estilos para los enlaces del menú */
+.menu li a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #382964; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; /* Transición suave */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Efecto hover para los enlaces del menú */
+.menu li a:hover {
+    color: #ee5437; /* Cambiar color del texto al pasar el mouse */
+    background-color: rgba(238, 84, 55, 0.1); /* Fondo ligeramente naranja */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para los submenús */
+.menu .sub-menu {
+    display: none; /* Ocultar submenús por defecto */
+    position: absolute; /* Posicionar los submenús de manera absoluta */
+    top: 100%; /* Colocar el submenú debajo del elemento padre */
+    left: 0;
+    background-color: #f7f0e8; /* Fondo del submenú */
+    list-style: none; /* Quitar los estilos de lista */
+    margin: 0; /* Eliminar el margen predeterminado */
+    padding: 0; /* Eliminar el padding predeterminado */
+    min-width: 200px; /* Ancho mínimo del submenú */
+    box-shadow: 0 4px 6px rgba(238, 84, 55, 0.1); /* Sombra con tono naranja */
+    z-index: 1000; /* Asegurar que el submenú esté por encima de otros elementos */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Mostrar submenús al hacer hover */
+.menu li:hover .sub-menu {
+    display: block; /* Mostrar submenú */
+}
+
+/* Estilos para los elementos del submenú */
+.menu .sub-menu li {
+    margin: 0; /* Eliminar el margen entre elementos del submenú */
+}
+
+/* Estilos para los enlaces del submenú */
+.menu .sub-menu li a {
+    padding: 10px 15px; /* Espaciado interno */
+    color: #382964; /* Color del texto */
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Efecto hover para los enlaces del submenú */
+.menu .sub-menu li a:hover {
+    color: #ee5437; /* Cambiar color del texto al pasar el mouse */
+    background-color: rgba(238, 84, 55, 0.1); /* Fondo ligeramente naranja */
+    border-radius: 8px; /* Bordes redondeados */
 }
